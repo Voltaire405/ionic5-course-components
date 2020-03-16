@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>botones</ion-title>
+    
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Atrás"></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button color="warning">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+      <ion-button color="danger">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<ion-button expand="full" size="small">small</ion-button>
+<ion-button expand= "full" size="default">default</ion-button>
+<ion-button expand= "full" size="large">large</ion-button>
+
+<ion-button class="top-20" expand="full" routerLink="/alert" color="tertiary">Tertiary</ion-button>
+
+<ion-grid class="top-20">
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" routerLink="/action-sheet" color="success">Action sheet</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" routerLink="/avatar" color="danger">Avatar</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-button class="top-20" fill="outline" >outline</ion-button>
+<ion-button class="top-20" fill="clear" >clear</ion-button>
+<ion-button class="top-20" fill="solid" >solid</ion-button>
+
+</ion-content>
