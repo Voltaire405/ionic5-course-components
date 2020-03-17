@@ -1,0 +1,12 @@
+<app-header titulo="Checkbox"></app-header>
+
+<ion-content >
+  <ion-list>
+    <ion-item *ngFor="let check of checkbox">
+      <ion-label>Tag</ion-label>
+      <ion-checkbox (click)="onClick(check)" [(ngModel)]="check.selected" [color]="check.name"></ion-checkbox><!-- El ng model permite actualizar le valor de la variable check.selected para este checkbox
+      en dos direcciones, es decir, al inicio obtiene el valor de la variable para inicializar, y cuando el usuario modifica este valor, la variable se actualiza -->
+    </ion-item>
+  </ion-list>
+
+</ion-content>

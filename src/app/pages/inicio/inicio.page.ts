@@ -26,7 +26,17 @@ export class InicioPage implements OnInit {
       icon:"aperture-sharp",
       name:"Botones",
       redirecTo:"/botones"
-    }
+    },
+    {
+      icon:"card-outline",
+      name:"Cartas",
+      redirecTo:"/card"
+    },
+    {
+      icon:"checkmark-circle-outline",
+      name:"Checkbox",
+      redirecTo:"/check"}
+    
   ];
   constructor() { }
 
